@@ -1,0 +1,30 @@
+package ASSIGNMENT1;
+
+import java.util.*;
+public class Evenodddelhi {
+    public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int N = sc.nextInt();
+		for(int i=0; i<N; i++){
+			long carnumber = sc.nextLong();
+			int even_sum = 0;
+			int odd_sum = 0;
+			while(carnumber>0){
+				long lastdigit = carnumber%10;
+				if(lastdigit%2==0){
+					even_sum += lastdigit;
+				}
+				else{
+					odd_sum += lastdigit;
+				} 
+			}
+			if(even_sum % 4 == 0 || odd_sum % 3 == 0){
+			System.out.println("Yes");
+			}
+			else{
+				System.out.println("No");
+			}
+		}
+		sc.close();
+    }
+}
