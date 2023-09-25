@@ -1,0 +1,23 @@
+package ASSIGNMENT1;
+
+import java.util.*;
+public class Sumoddeven {
+    public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		long N = sc.nextLong();
+		int even_sum = 0;
+		int odd_sum = 0;
+		String str = String.valueOf(N);
+		for(int i=0; i<str.length(); i++){
+			if(i%2==0){
+				even_sum += (str.charAt(i)-'0');
+			}
+			else{
+				odd_sum += (str.charAt(i)-'0');
+			}
+		}
+		System.out.println(odd_sum);
+    	System.out.println(even_sum);
+        sc.close();
+    }
+}
