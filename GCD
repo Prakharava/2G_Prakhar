@@ -1,0 +1,26 @@
+package ASSIGNMENT1;
+
+import java.util.*;
+public class GCD {
+    public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		long N1 = sc.nextLong();
+		long N2 = sc.nextLong();
+		long i;
+		long gcd = 1;
+		if(N1>N2){
+			i = N2;
+		}
+		else{
+			i = N1;
+		}
+		for(i=0; i>1; i--){
+			if(N1%i==0 && N2%i==0){
+				gcd = i;
+				break;
+			}
+		}
+		System.out.println(gcd);
+        sc.close();
+    }
+}
