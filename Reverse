@@ -1,0 +1,19 @@
+package ASSIGNMENT1;
+
+import java.util.*;
+public class Reverse {
+    public static void main(String args[]) {
+        // Your Code Here
+		Scanner sc = new Scanner(System.in);
+		long N = sc.nextInt();
+		int remainder = 0;
+		int sum = 0;
+		while(N>0){
+			remainder = (int)(N%10);
+			sum = (sum*10) + remainder;
+			N = N/10;
+		}
+		System.out.println(sum);
+        sc.close();
+    }
+}
